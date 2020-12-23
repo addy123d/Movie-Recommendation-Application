@@ -1,0 +1,132 @@
+body {
+    background: #f1f3f8;
+    color: #31291d;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3%;
+}
+
+.container .poster {
+    text-align: center;
+}
+
+.container .poster .title {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+}
+
+.details {
+    text-align: center;
+}
+
+/* .actors,
+.director,
+.genre,
+.plot,
+.release,
+.rating,
+.imdb {
+    text-align: center;
+} */
+
+.actors h2,
+.director h2,
+.plot h2,
+.genre h2,
+.release h2,
+.rating h2,
+.imdb h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.plot h2 span {
+    letter-spacing: -1px;
+}
+
+.rating ul {
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rating ul li {
+    font-size: bold;
+}
+
+.actors h2 span,
+.director h2 span,
+.plot h2 span,
+.genre h2 span,
+.release h2 span,
+.imdb h2 span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    margin-left: 3%;
+    font-weight: 200;
+}
+
+/* Back button */
+.back {
+    position: fixed;
+    top: 93%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.back .button {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 50px;
+    /* background: red; */
+    background: linear-gradient(145deg, #ffffff, #d9dbdf);
+    box-shadow: 20px 20px 60px #9fa0a4,
+        -20px -20px 60px #ffffff;
+    border-radius: 40px;
+}
+
+.button i {
+    position: absolute;
+    top: 22%;
+    left: 34%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.back .button:hover {
+    transition: all .4s;
+    background: #890efdf5;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 2px #1c1d1e;
+}
+
+
+@media (max-width: 933px) {
+    .container {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 451px) {
+    img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 388px) {
+    img {
+        height: 300px;
+        width: 300px;
+    }
+}
