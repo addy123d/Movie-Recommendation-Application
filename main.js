@@ -11,7 +11,7 @@ search.addEventListener("input",function(){
     // Fetch data with search value !
     const movieName = search.value;
 
-    fetch('http://www.omdbapi.com/?s='+movieName+'&apikey=<key>')
+    fetch('http://www.omdbapi.com/?s='+movieName+'&apikey=<key>') //Add your own API Key
     .then(response=>response.json())
     .then(
         function(data){
