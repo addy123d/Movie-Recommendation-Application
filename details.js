@@ -10,7 +10,7 @@ const movie_container = document.querySelector(".container");
 const movie_title = document.querySelector(".title");
 
 window.addEventListener("load",function(){
-    fetch('http://www.omdbapi.com/?i='+id+'&apikey=<key>')
+    fetch('http://www.omdbapi.com/?i='+id+'&apikey=<key>')    //Add your API Key !
     .then(response=>response.json())
     .then(
         function(data){
